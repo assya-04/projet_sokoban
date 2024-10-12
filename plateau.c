@@ -27,7 +27,7 @@ void placement(char tab[SIZE][SIZE], joueur *j, box *b, empl *em)
         b->x = rand() % (SIZE - 2) + 1;
         b->y = rand() % (SIZE - 2) + 1;
         em->x = rand() % (SIZE - 2) + 1;
-        em->y = rand() % (SIZE - 2) + &&&&&&1;
+        em->y = rand() % (SIZE - 2) + 1;
     } while ((j->x == b->x && j->y == b->y) || 
              (b->x == em->x && b->y == em->y) || 
              (j->x == em->x && j->y == em->y));
