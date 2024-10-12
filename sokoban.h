@@ -37,7 +37,6 @@ void init_tab(char tab[SIZE][SIZE]);
 void placement(char tab[SIZE][SIZE], joueur *j, box *b, empl *em);
 void affiche_tab(char tab[SIZE][SIZE]);
 char ask_player_move();
-//void check_deplacement(char tab[SIZE][SIZE], char move);
-int deplacer(char tab[SIZE][SIZE], joueur *j, char move) ;
+int deplacer(char tab[SIZE][SIZE], joueur *j, char move,box *b, empl *em) ;
 
 #endif
