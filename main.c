@@ -1,13 +1,25 @@
-
 #include "sokoban.h"
 
 
-int main() 
+int main()
 {
-    char tab[SIZE][SIZE]; 
-    init_tab(tab);        
-    affiche_tab(tab);     
-
-
+    char tab[SIZE][SIZE];
+    joueur j;
+    empl em;
+    box b;
+    srand(time(NULL));
+    init_tab(tab);
+    placement(tab, &j, &b, &em);
+    while(1)
+    {
+        system("clear");
+        affiche_tab(tab);
+        char move=ask_player_move();
+        if(deplacer(tab, &j,move)==0)
+        {
+            printf("mouvement impossible.\n");
+        }
+    }
+   
     return 0;
 }
