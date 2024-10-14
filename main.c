@@ -12,7 +12,7 @@ int main()
     placement(tab, &j, &b, &em);
     while(1)
     {
-        //system("clear");
+        system("clear");
         affiche_tab(tab);
         char move=ask_player_move();
         if(deplacer(tab, &j,move,&b, &em)==0)
