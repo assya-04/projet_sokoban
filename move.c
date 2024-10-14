@@ -4,7 +4,7 @@
 char ask_player_move() 
 {
     char move;
-    printf("Entrez votre mouvement (w/a/s/d) : ");
+    printf("Entrez votre mouvement : haut(w) / gauche(a)/ bas(s) /droite(d): ");
     scanf(" %c", &move);
     return move;
 }
